@@ -13,7 +13,7 @@
         </thead>
         <tbody>
         <ng-container *ngFor="let product of this.mainService.products?.productsTable">
-          <tr style="background-color: whitesmoke;">
+          <tr style="background-color:bisque;">
             <td><img src="{{product.thumbnail}}" alt="">
             </td>
             <td>
@@ -24,7 +24,7 @@
               </ul>
             </td>
             <td>
-              <button>Do koszyka</button>
+              <button (click)="addToCart(product)">Do koszyka</button>
             </td>
           </tr>
         </ng-container>

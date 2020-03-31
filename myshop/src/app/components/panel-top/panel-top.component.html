@@ -1,10 +1,22 @@
-<div>
+<div style="background-color:bisque;">
     <div style="display: flex;flex-direction: row;">
-        <img src="https://via.placeholder.com/100" alt="">
+        <img src="http://avatarbox.net/avatars/img28/kitten_eyes_avatar_picture_75535.jpg" alt="">
         <h2>Sklep z softłerem</h2>
     </div>
     <div style="display: flex; justify-content: center;">
         <input type="text" [(ngModel)]="this.mainService.productsRequest.name">
         <button (click)="this.mainService.getProducts(this.mainService.productsRequest)" routerLink="/products">Szukaj Produktu</button>
     </div>
+    <div>
+      <button id="cartBtn"  routerLink="/cart">
+         {{getCartQuanity()}}
+        </button>
+      </div>
+      <footer>
+        <ul style="background-color:pink;">
+          <li>Kontakt</li>
+          <li>Praca</li>
+          <li>Promocje</li>
+        </ul>
+      </footer>
 </div>
