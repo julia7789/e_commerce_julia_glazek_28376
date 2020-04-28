@@ -10,10 +10,10 @@ export class AdmProductsComponent implements OnInit {
   constructor(public mainService: MainService) { }
 
   newProduct = {
-    thumbnail: '',
-    title: '',
-    price: 0,
-    category: ''
+    thumbnail: 'https://powerplay.com.pl/userdata/gfx/66b8a4442b384ceea589df9886271954.jpg',
+    title: 'Bloodborne',
+    price: 100,
+    category: 'Polecanko'
   };
 
   ngOnInit(): void {
