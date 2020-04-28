@@ -13,7 +13,7 @@ export class AdmProductsComponent implements OnInit {
     thumbnail: 'https://powerplay.com.pl/userdata/gfx/66b8a4442b384ceea589df9886271954.jpg',
     title: 'Bloodborne',
     price: 100,
-    category: 'Polecanko'
+    category: 'game'
   };
 
   ngOnInit(): void {

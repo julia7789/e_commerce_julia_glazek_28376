@@ -2,7 +2,7 @@
 
 <button routerLink="/landing">Powrót</button>
 
-<div class="products">
+<div class="products" style="background-image: url('https://wallpapertag.com/wallpaper/full/8/9/7/186797-beautiful-black-background-tumblr-1920x1200-for-full-hd.jpg')">
     <table style="margin:0 auto;">
         <thead *ngIf="this.mainService.products">
             <tr>
@@ -12,8 +12,8 @@
             </tr>
         </thead>
         <tbody>
-        <ng-container *ngFor="let product of this.mainService.products?.productsTable">
-          <tr style="background-color:bisque;">
+        <ng-container *ngFor="let product of this.mainService.products?.productsTable" >
+          <tr>
             <td><img src="{{product.thumbnail}}" alt="">
             </td>
             <td>
