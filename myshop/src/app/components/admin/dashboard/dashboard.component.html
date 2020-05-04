@@ -1,10 +1,10 @@
-<div style="display: flex;flex-direction: row;">
+<div style="display: flex;flex-direction: row; background-image: url('https://a-static.besthdwallpaper.com/pokoj-tlo-tapeta-3554x1999-30572_53.jpg');">
   <app-menu></app-menu>
   <div class="content" style="width: 100%;">
   <div class="content-header">
   <h2>DASHBOARD</h2>
 </div>
-<div style="width: 60%;">
+<div style="width: 60%; background-color: white;">
   <div style="display: block">
     <canvas baseChart
     [datasets]="barChartData"
@@ -31,14 +31,14 @@
         <th>Cena</th>
       </tr>
     </thead>
-    <tbody>
+    <tbody style="color:black;">
       <tr *ngFor="let order of this.mainService.orders.orders">
-        <td>{{order.id}}</td>
-        <td>{{order.first_name}}</td>
-        <td>{{order.last_name}}</td>
-        <td>{{order.email}}</td>
-        <td>{{order.phone}}</td>
-        <td>{{order.price}}</td>
+        <td style="border-style: solid; color: white;">{{order.id}}</td>
+        <td style="border-style: solid; color: white;">{{order.first_name}}</td>
+        <td style="border-style: solid; color: white;">{{order.last_name}}</td>
+        <td style="border-style: solid; color: white;">{{order.email}}</td>
+        <td style="border-style: solid; color: white;">{{order.phone}}</td>
+        <td style="border-style: solid; color: white;">{{order.price}}</td>
       </tr>
     </tbody>
   </table>
